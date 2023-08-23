@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arizona State University (Lunatix)</title>
+	<link rel="stylesheet" href="foundation.css">
+	<link rel="shortcut icon" href="Minilogo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  	<style type="text/css">
+  		.header-bg{
+			background: url('Sch/Arizona.jpeg');
+			background-size: cover;
+			height: 610px;
+			width: 100%;
+			background-repeat: no-repeat;
+		}
+  		.navbar .offcanvas .offcanvas-body .nav-item{
+    	    padding: 5px;
+    	    font-weight: 800;
+    	    font-size: larger;
+    	    letter-spacing: 2px;
+    	}
+	
+    	.navbar .offcanvas .offcanvas-body  .nav-link{
+    	    width: 150px;
+    	    color: whitesmoke;
+    	    transition: 1s all ease-out;
+    	}
+
+		.ff
+
+    	.navbar .offcanvas .offcanvas-body  .nav-link:hover{
+    	    font-weight: bold;
+    	    color: orange;
+    	    padding-left: 10px;
+    	    padding-right: 10px;
+    	    border-left: 8px solid orange;
+    	    border-right: 8px solid orange;
+    	}
+	
+    	.navbar .offcanvas .offcanvas-body  .nav-link{
+    	    border-top-left-radius: 50px;
+    	    border-bottom-right-radius: 50px;
+    	}
+  	</style>
+</head>
+<body style="background-color: #717171;">
+	
+	<nav class="navbar navbar-expand-lg navbar-color sticky-top">
+        <button class="navbar-toggler mx-auto border-0 custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#myoffcanvasnavbar">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-dark" id="myoffcanvasnavbar">
+            <div class="offcanvas-body">
+                <div class="navbar-brand ms-5 text-center">
+                    <a href="index.html"><img src="favicon.png" style="width: 70px; border-radius: 50%;"></a>
+                </div>
+                <ul class="navbar-nav mt-3 mx-auto">
+                    <li class="nav-item"><a href="AboutUs.html" class="nav-link text-center mx-auto">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center mx-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Scholars
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+						  <li><a class="dropdown-item" href="SourcePage.html">Scholars</a></li>
+                          <li><a class="dropdown-item" href="UndergraduateScholars.html">Undergraduate</a></li>
+                          <li><a class="dropdown-item" href="PostgraduateScholars.html">Postgraduate</a></li>
+                          <li><a class="dropdown-item" href="MasterDegreeScholars.html">MasterDegree</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="Sign Up.html" class="nav-link text-center mx-auto">Sign Up</a></li>
+                    <form class="mx-auto text-center">
+                        <div class="d-flex flex-sm-row ms-4" style="width: 300px; height: 50px; background-color: orange; border-top-left-radius: 100px; border-bottom-right-radius: 100px; border-bottom-right-radius: 100px;">
+                          <input type="text" class="form-control" placeholder="             Search..." style="border: 3px orange solid; border-bottom-right-radius: 100px; border-top-left-radius: 100px;">
+                          <button class="btn" style="background-color: orange;  border-bottom-right-radius: 100px;"><i class="fa-solid fa-magnifying-glass my-2 me-3 text-light" style="width: 30px;"></i></button>
+                        </div>                  
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--The Modal-->
+    <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!--Modal Header-->
+                <div class="modal-header border-0">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <a href="#" class="mbtn  mb-5"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google me-2" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                            </svg>
+                            Sign up with Google
+                        </a>
+                        <br>
+                        <br>
+                        <a href="#" class="mbtn mb-5"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google me-2" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                            </svg>
+                            Sign up with Facebook
+                        </a>
+                        <br>
+                        <br>
+                        <a href="#" class="mbtn mt-5"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter me-2" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                            Sign up with twitter
+                        </a>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="d-flex align-items-center g-0">
+                        <div class="border-bottom fw-900 mw-50 w-100"></div>
+                        <span class="mx-2 fw-bold" style="color: orange;">Or</span>
+                        <div class="border-bottom fw-900 mw-50 w-100"></div>
+                    </div>
+                    <form class="was-validated">
+                        <div class="my-3">
+                          <label class="form-label" for="validation1">Email</label>
+                          <input class="form-control bg-light" type="email" id="validation1" name="email" id="email" style="border: none;" placeholder="@example.com" required>
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="my-3">
+                            <div class="row">
+                            	<label for="validation2" class="form-label mb-0">Password</label>
+                                <label class="form-label d-flex justify-content-end"><a href="#" style="text-decoration: none; color: red;">Forget password</a></label>   
+                            </div>
+                            <input class="form-control" id="validation2" placeholder="(Must be 8 letters)" required id="myPsw">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="validation3" required>
+                            <label class="form-check-label" for="validation3">I agree terms and conditions.</label>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Check this checkbox to continue.</div>
+                        </div>
+                    </form>
+                </div>      
+                <!--Modal Footer-->
+                <div class="modal-footer border-0">
+                    <a href="#" class="mbtn">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="overlay">
+
+		<header class="header-bg">
+			<div class="inner-overlay"></div>
+			<h1 class="text-center uni-name">Arizona State University</h1>
+		</header>
+    </div>
+
+	<div class="text-body">
+		<div class="inner-textbody">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7 TJ">
+					
+					<p><b>Level:</b> Undergraduate</p>
+					<p><b>Worth of scholarship:</b> Varies</p>
+					<p><b>Foundation:</b> Arizona State University</p>
+					<p><b>Country:</b> USA</p>
+					<p><b>Total Awards:</b> Not specified</p>
+					<p><b>Citizenship:</b> International</p>
+					<p><b>Rating:</b> 4.4</p>
+					<h3><b>Exploring Scholarships: Unveiling the New American University Scholar Honors</b></h3>
+
+					<p>Embarking on your academic journey at ASU is more than a mere step; it's a leap into the realm of possibilities. For outstanding transfer students and new international freshmen, the New American University Scholar honors stand as a testament to your potential, offering not just financial support, but an immersive environment dedicated to knowledge, exploration, and solving the world's most pressing challenges.</p>
+
+					<h3><b>Beyond Scholarships: A Journey of Empowerment</b></h3>
+
+					<p>Imagine a place where your pursuit of academic success is met with unwavering support. The New American University Scholar program goes beyond traditional scholarships. It's a pathway designed to inspire, empower, and propel you toward a future marked by meaningful contributions. With a monetary incentive as your compass, you'll navigate an environment that values learning, research, and the exchange of ideas, equipping you with the tools to tackle society's most complex issues.</p>
+
+					<h3><b>Seamless Integration: Your ASU Adventure Begins</b></h3>
+
+					<p>When you step into ASU, you're already on the path to the New American University Scholar honors. As an enrolled student, you're automatically in the running for this prestigious award. There's no need for a separate application process. However, to be considered, make sure the ASU Undergraduate Admissions Office receives all your international admission application materials—admission application, official transcripts, test scores, financial guarantee, and application fee—by the scholarship priority date of April 1.</p>
+
+					<h3><b>Illuminating Eligibility</b></h3>
+
+					<p>The New American University Scholar program welcomes individuals who meet specific criteria, designed to encapsulate dedication and promise:</p>
+					<ul>
+    					<li>Global Aspirations: ASU is a global community, ready to embrace international students as they shape their futures.</li>
+    					<li>Demonstrated Need: Financial circumstances won't limit your journey; they'll propel it forward.</li>
+    					<li>Academic Excellence: Your academic journey becomes a canvas of achievement.</li>
+    					<li>Language Proficiency: Fluent English communication ensures your ideas resonate on a global scale.</li>
+    					<li>Exceptional Performance: Remarkable test scores and GPA highlight your dedication to academic growth.</li>
+    					<li>F-1 Visa Advantage: F-1 visa holders are uniquely poised to reap the benefits of this remarkable program.</li>
+    					<li>Sponsorship Exclusion: Sponsored students, while valued, are not eligible for this particular honor.</li>
+    				</ul>
+					<h3><b>Continuation Awaits</b></h3>
+
+					<p>Your story is waiting to unfold, and the New American University Scholar honors are the chapters that amplify your narrative. Beyond scholarships, these honors lay the foundation for an enriching academic journey—a journey that challenges, inspires, and shapes the future you've always envisioned.</p>
+
+					<i>Ready to Shape Your Future?</i>
+
+					<br><br>
+					<a href="https://admission.asu.edu/cost-aid/international" class="btn btn-secondary text-dark">Learn More</a>
+					<br><br>
+				</div>
+				<div class="col-sm-5">
+  					<div>
+  						<img src="Sch/Arizona.jpeg" style="width: 100%;">
+  						<a href="https://www.asu.edu/" class="btn btn-secondary w-100">Explore</a>
+  					</div>
+
+  					<h3 class="pt-4"><b>Related Content</b></h3>
+  					<!--Need to fix-->
+  					<div class="pt-3">
+  						<a href="Harvard University.html">
+  							<img src="Harvard.png" class="w-100 overlayimg">
+  						</a>
+  					</div>
+
+  					<div class="pt-5">
+  						<a href="Yale University.html">
+  							<img src="Yale.png" class="w-100 overlayimg" style="padding-left: 110px; padding-right: 110px; padding-top: 10px; padding-bottom: 10px;">
+  						</a>
+  					</div>
+  					<!---->
+  					<h3 class="pt-5"><b>Most Asked Questions</b></h3>
+
+  					<div class="accordion pt-2" id="accordionExample13">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading13">
+								<div class="accordion-button btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
+								Do I need to be accepted into a university before applying for scholarships?
+								</div>
+							</h2>
+							<div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample13">
+								<div class="accordion-body">
+								  <strong>It depends on the scholarship.</strong> Some scholarships require you to be admitted to a university before applying, while others may allow you to apply as long as you meet their eligibility criteria.
+								</div>
+							</div>
+						  </div>
+						</div>
+			
+						<div class="accordion pt-2" id="accordionExample14">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading14">
+								<div class="accordion-button btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
+								Are there any essay or interview requirements for these scholarships?
+								</div>
+							</h2>
+							<div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample14">
+								<div class="accordion-body">
+								  <strong>Many scholarships require applicants to write essays or provide responses to specific prompts.</strong> Some scholarships might also involve interviews as part of the selection process.
+								</div>
+							</div>
+						  </div>
+						</div>
+			
+						<div class="accordion pt-2" id="accordionExample15">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading15">
+								<div class="accordion-button btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
+								Can I apply for scholarships if I'm already receiving financial aid?
+								</div>
+							</h2>
+							<div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionExample15">
+								<div class="accordion-body">
+								  <strong>Scholarships may be stackable with other forms of financial aid.</strong> However, it's important to review the terms of both the scholarship and your existing aid to ensure compliance.
+								</div>
+							</div>
+						  </div>
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="circle">
+        <footer class="fw-bold">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <img src="favicon.png" class="logo">
+                    <p>Unlock countless scholarships with a Lunatix subscription! Access curated opportunities, expert advice, and timely alerts. Subscribe now for an education-filled future!</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Office <div class="underline"><span></span></div></h5>
+                    <p>Yuzana Street</p>
+                    <p>41 Ward, North Dagon</p>
+                    <p>No.159, Yangon</p>
+                    <p class="email-id">zwekhanthtal2009@gmail.com</p>
+                    <h6>+95 - 9965929856</h6>   
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Links <div class="underline"><span></span></div></h5>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AboutUs.html">About</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle text-center mx-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Scholars
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="SourcePage.html">Scholars</a></li>
+                              <li><a class="dropdown-item" href="UndergraduateScholars.html">Undergraduate</a></li>
+                              <li><a class="dropdown-item" href="PostgraduateScholars.html">Postgraduate</a></li>
+                              <li><a class="dropdown-item" href="MasterDegreeScholars.html">MasterDegree</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="References.docx">References</a></li>
+                        <li><a href="" data-bs-toggle="modal" data-bs-target="#mymodal">Log In</a></li>
+                        <li><a href="Sign Up.html">Sign Up</a></li>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5>Newsletter <div class="underline"><span></span></div></h5>
+                    <form action="">
+                        <i class="far fa-regular fa-envelope"></i>
+                        <input type="email" class="ms-2" placeholder="Enter your email id" required>
+                        <button type="submit"><i class="fas fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/thomus.thomus.5076?mibextid=2JQ9oc"><i class="fab fa-brands fa-facebook-f mx-1"></i></a>
+            			<a href="#"><i class="fab fa-brands fa-twitter mx-1"></i></a>
+            			<a href="https://instagram.com/lunatix290?igshid=MjEwN2IyYWYwYw=="><i class="fab fa-brands fa-instagram mx-1"></i></a>
+            			<a href="https://www.tiktok.com/@lunatix24?lang=en"><i class="fab fa-brands fa-tiktok mx-1"></i></a>
+                    </div>
+                </div>
+                <a href="#" style="text-decoration: none;" class="text-light">Back to Top<i class="fa-solid fa-arrow-up ms-2"></i></a>
+            </div>
+            <hr>
+            <p class="copyright">Lunatix 2023 © - All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
