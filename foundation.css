@@ -1,0 +1,283 @@
+
+.header-bg{
+	background: url('University of Sydney-bg.png');
+	background-size: cover;
+	height: 610px;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+.overlay{
+	height: 600px;
+	width: 100%;
+}
+.uni-name{
+	color: transparent;
+	padding-top: 10%;
+	overflow: hidden;
+	font-size: 150px;
+	transition: 1s all ease;
+}
+.overlay:hover .uni-name{
+	color: black;
+	text-shadow: 5px 5px orange;
+	padding-top: 12%;
+	font-size: 100px;
+}
+.text-body{
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	background: #717171;
+	width: 100%;
+	height: 100%;
+}
+.inner-textbody{
+	height: 110px;
+	width: 100%;
+	transform: translateY(-50px);
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	background: #717171;
+	transition: 0.5s all ease-out;
+}
+.inner-textbody:hover{
+	transform: translateY(-65px);
+}
+.text-body:hover .inner-textbody{
+	transform: translateY(-65px);
+}
+.overlayimg{
+	height: 300px;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	border-radius: 50px;
+	box-shadow: 20px 20px 50px black;
+	transition: 1s all ease;
+}
+.overlayimg:hover{
+	transform: translateY(-10px);
+}
+
+.navbar{
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transition: 5s all ease-out;
+    background-color: rgba(0, 0, 0, 0.7);
+	font-family: 'poppins', sans-serif;
+}
+.navbar:hover{
+    border-right: 15px solid black;
+    border-left: 15px solid black;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btni {
+    transition: 0.5s;
+}
+
+.container2 .card .content a:hover .btni{
+    transform: translateX(10px);
+    transition: 0.5s;
+ }
+
+ .modal .modal-content {
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    color: white;
+ }
+
+ .modal .modal-content .mbtn{
+    padding: 8px 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ }
+
+ .modal .modal-content .mbtn:hover{
+    background: orange;
+    color: white; 
+ }
+
+ .modal .modal-content .mbtn:hover .btni{
+    transform: translateX(5px);
+ }
+
+ .cc .mbtn{
+    padding: 8px 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ }
+
+ .cc .mbtn:hover{
+    background: orange;
+    color: white; 
+ }
+
+ .cc .mbtn:hover .btni{
+    transform: translateX(5px);
+ }
+
+
+    footer {
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(to right, rgba(255, 166, 0, 0.73), rgba(79, 29, 2, 0.664));
+        color: #fff;
+        padding: 100px 0 30px;
+        border-top-left-radius: 125px;
+        font-size: 13px;
+        line-height: 20px;
+        font-family: 'poppins', sans-serif;
+        backdrop-filter: blur(5px);
+		font-family: 'poppins', sans-serif;
+    }
+
+    footer .row {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    footer .row .col-md-3 {
+        padding: 10px;
+        flex-basis: 25%;
+    }
+
+    .col-md-3:nth-child(2), .col-md-3:nth-child(3) {
+        flex-basis: 15%;
+    }
+
+    footer .logo {
+        width: 80px;
+        margin-bottom: 30px;
+    }
+
+    footer .row .col-md-3 h5 {
+        width: fit-content;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    footer .row .col-md-3 .email-id {
+        width: fit-content;
+        border-bottom: 1px solid #ccc;
+        margin: 20px 0;
+    }
+
+    footer .row .col-md-3 li {
+        list-style: none;
+        margin-bottom: 12px;
+    }
+
+    footer .row .col-md-3 li a {
+       text-decoration: none;
+       color: #fff;
+       margin-right: 50px;
+    }
+
+    footer .row .col-md-3 form {
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 50px;
+    }
+
+    footer .row .col-md-3 form .far {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    footer .row .col-md-3 form input {
+        width: 100%;
+        background: transparent;
+        color: #ccc;
+        border: 0;
+        outline: none;
+    }
+
+    footer .row .col-md-3 form button {
+        background: transparent;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+
+    footer .row .col-md-3 form button .fas {
+       font-size: 16px; 
+       color: #ccc;
+    }
+
+    footer .row .col-md-3 .social-icons .fab {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 20px;
+        color: #000;
+        background: #fff;
+        cursor: pointer;
+    }
+
+
+    .copyright {
+        text-align: center;
+    }
+
+    footer hr {
+        width: 90%;
+        border: none;
+        border-bottom: 3px solid #ccc;
+        margin: 20px auto;
+    }
+
+    .underline {
+        width: 100%;
+        height: 5px;
+        background: #767676;
+        border-radius: 3px;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .underline span {
+        width: 15px;
+        height: 100%;
+        background: #fff;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        animation: moving 2s linear infinite;
+    }
+
+    @keyframes moving {
+        0% {
+            left: -20px;
+        }
+        100% {
+            left: 100%;
+        }
+    }

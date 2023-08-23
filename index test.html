@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Home</title>
+   <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<style>
+    /*.navbar .offcanvas .offcanvas-body .nav-item{
+        padding: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 800;
+        font-size: larger;
+        letter-spacing: 2px;
+    }
+
+    .navbar .offcanvas .offcanvas-body  .nav-link{
+        width: 150px;
+        color: whitesmoke;
+        transition: 1s all ease-out;
+    }
+
+    .navbar .offcanvas .offcanvas-body  .nav-link:hover{
+        font-weight: bold;
+        color: orange;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: 8px solid orange;
+        border-right: 8px solid orange;
+    }
+
+    .navbar .offcanvas .offcanvas-body  .nav-link{
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .carousel-indicators .btnam {
+        color: rgba(255, 255, 255, 0.9);
+        background-color: orange;
+        height: 30px;
+        width: 30px;
+        transition: 0.5s;
+    }
+
+    .carousel-indicators .btnam:hover {
+        transform: translateY(-20px);  
+    }
+
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+    }*/
+
+</style>
+<body style="background-color: rgba(113,113,113,255)">
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-color">
+        <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#myoffcanvasnavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" id="myoffcanvasnavbar">
+            <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Offcanvas</h3>
+            <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+        </div>
+            <div class="offcanvas-body">
+                <div class="navbar-brand ms-5">
+                    <img src="favicon.png" style="width: 70px; border-radius: 50%;">
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-center">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-center">Resources</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-center">Enroll</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-center" data-bs-toggle="modal" data-bs-target="#mymodal">Log In</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-center">Register</a></li>
+                    </ul>
+                    <form class="ms-5">
+                        <div class="d-flex flex-sm-row ms-4" style="width: 300px; height: 50px; background-color: orange; border-top-left-radius: 100px; border-bottom-right-radius: 100px; border-bottom-right-radius: 100px;">
+                          <input type="text" class="form-control" placeholder="             Search..." style="border: 3px orange solid; border-bottom-right-radius: 100px; border-top-left-radius: 100px;">
+                          <button class="btn" style="background-color: orange;  border-bottom-right-radius: 100px;"><i class="fa-solid fa-magnifying-glass my-2 me-3 text-light" style="width: 30px;"></i></button>
+                        </div>                  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Responsive Offcanvas Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#myoffcanvas1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" id="myoffcanvas1">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Offcanvas</h3>
+            <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex mt-3">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success" type="button">Search</button>
+            </form>
+        </div>
+    </div>
+  </div>
+</nav> -->
+    <!--The Modal-->
+    <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!--Modal Header-->
+                <div class="modal-header border-0">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <a href="#" class="mbtn  mb-5"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google me-2" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                            </svg>
+                            Sign up with Google
+                        </a>
+                        <br>
+                        <br>
+                        <a href="#" class="mbtn mb-5"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google me-2" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                            </svg>
+                            Sign up with Facebook
+                        </a>
+                        <br>
+                        <br>
+                        <a href="#" class="mbtn mt-5"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter me-2" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                            Sign up with twitter
+                        </a>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="d-flex align-items-center g-0">
+                        <div class="border-bottom fw-900 mw-50 w-100"></div>
+                        <span class="mx-2 fw-bold" style="color: orange;">Or</span>
+                        <div class="border-bottom fw-900 mw-50 w-100"></div>
+                    </div>
+                    <form class="was-validated">
+                        <div class="my-3">
+                          <label class="form-label" for="validation1">Email</label>
+                          <input class="form-control bg-light" type="email" id="validation1" name="email" id="email" style="border: none;" placeholder="@example.com" required>
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="my-3">
+                            <div class="row">
+                                <label for="validation2" class="form-label mb-0">Password</label>
+                                <label class="form-label d-flex justify-content-end"><a href="#" style="text-decoration: none; color: red;">Forget password</a></label>   
+                            </div>
+                            <input class="form-control" id="validation2" placeholder="(Must be 8 letters)" required id="myPsw">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="validation3" required>
+                            <label class="form-check-label" for="validation3">I agree terms and conditions.</label>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Check this checkbox to continue.</div>
+                        </div>
+                    </form>
+                </div>      
+                <!--Modal Footer-->
+                <div class="modal-footer border-0">
+                    <a href="#" class="mbtn">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          document.getElementById("myPsw").maxLength = "10";
+        }
+    </script>
+    <div id="demo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+
+        <!--indicator/dots-->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active btnam"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="btnam"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="btnam"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="btnam"></button>
+        </div>
+        <!--The slideshow/carousel-->
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-intervals="1000">
+                <img src="carousel1.png" alt="LA" height="600px" class="d-block w-100" data-bs-target="#demo" data-bs-slide="next">
+                <div class="carousel-caption anicap">
+                    <h3>Solo Leveling</h3>
+                    <p>I Will Protect My Family Even If It Means Turning All The Hunters In The World Against Me.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-intervals="1000">
+                <img src="carousel2.png" alt="Paris" height="600px" class="d-block w-100" data-bs-target="#demo" data-bs-slide="next">
+                <div class="carousel-caption anicap">
+                    <h3>Solo Leveling</h3>
+                    <p>I Will Protect My Family Even If It Means Turning All The Hunters In The World Against Me.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-intervals="1000">
+                <img src="carousel3.png" alt="NY" height="600px" class="d-block w-100" data-bs-target="#demo" data-bs-slide="next">
+                <div class="carousel-caption anicap">
+                    <h3>Solo Leveling</h3>
+                    <p>I Will Protect My Family Even If It Means Turning All The Hunters In The World Against Me.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-intervals="1000">
+                <img src="carousel4.png" alt="NY" height="600px" class="d-block w-100" data-bs-target="#demo" data-bs-slide="next">
+                <div class="carousel-caption anicap">
+                    <h3>Solo Leveling</h3>
+                    <p>I Will Protect My Family Even If It Means Turning All The Hunters In The World Against Me.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-body">
+        <div class="container">
+            <div class="navigater text-center">
+                <div class="container2">
+                    <div class="card2">
+                        <h1 class="text-warning navigater-item" style="font-family: 'poppins', sans-serif"><b>Lunatix Present</b></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="col-md-5 mt-5">
+                   <img src="Scholarships.png" alt="#" class="amimg" style="border-top-left-radius: 100px; border-bottom-right-radius: 100px; width: 100%; height: 95%; box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);">  
+                </div>
+                <div class="col-md-7 mt-3">
+                    <div class="container2">
+                        <div class="card">
+                            <div class="content">
+                                <h2>Q&A</h2>
+                                <h3 style="color: orange; border-bottom: 3px solid orange; border-radius: 25%;">What is Scholarships?</h3>
+                                <p>A grant or payment made to support a student's education, awarded on the basis of academic or other achievement. A scholarship is financial support awarded to a student, based on academic achievement or other criteria that may include financial need, for the purpose of schooling...</p>
+                                <a href="#" class="mbtn">Read More<i class="fa-solid fa-arrow-right ms-2 btni"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-body">
+        <div class="container">
+            <div class="container2">
+                <div class="card">
+                    <div class="content">
+                        <h2 class="mt-4">TOP10</h2>
+                        <h3 style="color: orange; font-size: xx-large; border-bottom: 3px solid orange; border-radius: 25%;" class="fw-bold">Top 10 School In the World</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mx-1" style="height: 85%;">
+                                    <div class="card-body col-md-12">
+                                        <img src="Harvard.png" alt="#" style="width: 300px; height: 300px; z-index: 0;">
+                                        <p style="font-size: xx-large; color: orange; z-index: 1;" class="text-center fw-bold carousel-caption">Havard Universtiy</p>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="demo2" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                    <!--The slideshow/carousel-->
+                                    <div class="carousel-inner mx-3 my-5" style="border-left: white 2px solid; border-radius: 20px;">
+                                        <div class="carousel-item active" data-bs-intervals="1000">
+                                            <img src="Law.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Law</h3>
+                                                <p>Harvard teaches students about the rules and principles that govern society and prepares them to become lawyers and legal professionals.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Medicine.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Medicine</h3>
+                                                <p>Harvard trains future doctors and medical experts to understand the human body, diagnose illnesses, and provide healthcare services.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Business.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Business</h3>
+                                                <p>Harvard equips students with the knowledge and skills to manage organizations, make strategic decisions, and succeed in the business world.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Computer_Science.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Computer Science</h3>
+                                                <p>Harvard teaches students how to create, analyze, and utilize computer software and technology to solve real-world problems.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Literature_Humanities.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Literature and Humanities</h3>
+                                                <p>Harvard explores various forms of human expression, including literature, history, and philosophy, to understand cultures, ideas, and societal developments throughout history.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Left and right controls/icons-->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="mbtn">Read More<i class="fa-solid fa-arrow-right ms-2 btni"></i></a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="demo3" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                    <!--The slideshow/carousel-->
+                                    <div class="carousel-inner mx-3 my-5" style="border-left: white 2px solid; border-radius: 20px;">
+                                        <div class="carousel-item active" data-bs-intervals="1000">
+                                            <img src="Maths.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Mathematics</h3>
+                                                <p>Cambridge teaches students about numbers, shapes, and patterns, helping them solve complex problems and understand the fundamental principles of the universe.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="English.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>English Literature</h3>
+                                                <p>At Cambridge, students read and analyze great literary works, exploring different cultures and time periods to gain insights into the human condition and enhance their communication skills.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Engineering.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Engineering</h3>
+                                                <p>Cambridge equips students with the knowledge and practical skills to design and build innovative technologies and structures that shape our modern world.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Natural Sciences.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Natural Sciences</h3>
+                                                <p>Cambridge delves into the study of the natural world, including physics, chemistry, biology, and earth sciences, enabling students to explore the wonders of the universe and address global challenges.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Eco.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Economics</h3>
+                                                <p>Cambridge teaches the principles of how societies manage resources and make decisions about production, distribution, and consumption, giving students the tools to analyze economic systems and policy implications.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Left and right controls/icons-->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mx-1" style="height: 85%;">
+                                    <div class="card-body col-md-12">
+                                        <img src="Cambridge.png" alt="#" style="width: 300px; height: 300px; z-index: 0;">
+                                        <p style="font-size: xx-large; color: orange; z-index: 1;" class="text-center fw-bold carousel-caption">Cambridge Uni...</p>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="mbtn">Read More<i class="fa-solid fa-arrow-right ms-2 btni"></i></a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mx-1" style="height: 85%;">
+                                    <div class="card-body col-md-12">
+                                        <img src="Columbia.png" alt="#" style="width: 300px; height: 300px; z-index: 0;">
+                                        <p style="font-size: xx-large; color: orange; z-index: 1;" class="text-center fw-bold carousel-caption">Columbia Universtiy</p>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="demo4" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                    <!--The slideshow/carousel-->
+                                    <div class="carousel-inner mx-3 my-5" style="border-left: white 2px solid; border-radius: 20px;">
+                                        <div class="carousel-item active" data-bs-intervals="1000">
+                                            <img src="Political Science.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Political Science</h3>
+                                                <p>At Columbia, students study governments and politics to understand how societies are governed and the dynamics of international relations.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Literature and Writing.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Literature and Writing</h3>
+                                                <p>Columbia helps students explore and appreciate literature while honing their writing skills to effectively communicate ideas and emotions.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Psychology.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Psychology</h3>
+                                                <p>Columbia teaches the science of the mind and behavior, helping students understand human thoughts, emotions, and actions.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="History.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>History</h3>
+                                                <p>Columbia delves into past events and societies, enabling students to gain insights into the world's cultural, social, and political developments.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Biology.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Biology</h3>
+                                                <p>Columbia's biology programs focus on living organisms and their processes, providing students with knowledge about the natural world and the intricacies of life.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Left and right controls/icons-->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo4" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo4" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="mbtn">Read More<i class="fa-solid fa-arrow-right ms-2 btni"></i></a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="demo5" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                    <!--The slideshow/carousel-->
+                                    <div class="carousel-inner mx-3 my-5" style="border-left: white 2px solid; border-radius: 20px;">
+                                        <div class="carousel-item active" data-bs-intervals="1000">
+                                            <img src="Computer_Science.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Computer Science</h3>
+                                                <p>Cambridge teaches students about numbers, shapes, and patterns, helping them solve complex problems and understand the fundamental principles of the universe.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Business.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Business and Management</h3>
+                                                <p>At Cambridge, students read and analyze great literary works, exploring different cultures and time periods to gain insights into the human condition and enhance their communication skills.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Engineering.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Engineering</h3>
+                                                <p>Cambridge equips students with the knowledge and practical skills to design and build innovative technologies and structures that shape our modern world.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Humanity and Social Sciences.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Humanity and Social Sciences</h3>
+                                                <p>Stanford offers a broad array of humanities and social science courses, including disciplines like history, psychology, economics, philosophy, and political science.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Medicine.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Medicine</h3>
+                                                <p>Stanford School of Medicine offers courses in medical sciences, clinical training, biomedical research, and health policy, preparing students for careers in healthcare and medical research.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Left and right controls/icons-->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo5" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo5" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mx-1" style="height: 85%;">
+                                    <div class="card-body col-md-12">
+                                        <img src="Stanford.png" alt="#" style="width: 300px; height: 300px; z-index: 0;">
+                                        <p style="font-size: xx-large; color: orange; z-index: 1;" class="text-center fw-bold carousel-caption">Stanford University</p>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="mbtn">Read More<i class="fa-solid fa-arrow-right ms-2 btni"></i></a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mx-1" style="height: 85%;">
+                                    <div class="card-body col-md-12">
+                                        <img src="Oxford.png" alt="#" style="width: 300px; height: 300px; z-index: 0;">
+                                        <p style="font-size: xx-large; color: orange; z-index: 1;" class="text-center fw-bold carousel-caption">Oxford Universtiy</p>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="demo6" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                    <!--The slideshow/carousel-->
+                                    <div class="carousel-inner mx-3 my-5" style="border-left: white 2px solid; border-radius: 20px;">
+                                        <div class="carousel-item active" data-bs-intervals="1000">
+                                            <img src="English.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>English Language and Literature</h3>
+                                                <p>At Oxford, students explore great literary works and learn to analyze language and writing styles to better understand human expression and culture.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Maths.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Mathematics</h3>
+                                                <p>Oxford teaches students the language of numbers, shapes, and patterns, enabling them to solve complex problems and explore the fundamental principles of science and engineering.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="History.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>History</h3>
+                                                <p>Oxford delves into the past, allowing students to study significant events and historical figures, gaining insights into the development of societies and civilizations.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Biology.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Biology</h3>
+                                                <p>Oxford's biology programs focus on living organisms and their functions, helping students understand life's diversity and the underlying processes that govern living systems.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-intervals="1000">
+                                            <img src="Philosophy.png" alt="LA" height="300px" width="95%" class="d-block" data-bs-slide="next">
+                                            <div class="carousel-caption">
+                                                <h3>Philosophy</h3>
+                                                <p>At Oxford, students examine fundamental questions about reality, knowledge, and ethics, fostering critical thinking and philosophical inquiry into the nature of existence.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Left and right controls/icons-->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo6" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo6" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="mbtn">Read More<i class="fa-solid fa-arrow-right ms-2 btni"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="color">
+        <div class="circle">
+            <footer class="fw-bold">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <img src="favicon.png" class="logo">
+                    <p>Unlock countless scholarships with a Lunatix subscription! Access curated opportunities, expert advice, and timely alerts. Subscribe now for an education-filled future!</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Office <div class="underline"><span></span></div></h5>
+                    <p>Yuzana Street</p>
+                    <p>41 Ward, North Dagon</p>
+                    <p>No.159, Yangon</p>
+                    <p class="email-id">zwekhanthtal2009@gmail.com</p>
+                    <h6>+95 - 9965929856</h6>   
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Links <div class="underline"><span></span></div></h5>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Resources</a></li>
+                        <li><a href="">Enroll</a></li>
+                        <li><a href="">Log In</a></li>
+                        <li><a href="">Sign Up</a></li>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5>Newsletter <div class="underline"><span></span></div></h5>
+                    <form action="">
+                        <i class="far fa-regular fa-envelope"></i>
+                        <input type="email" class="ms-2" placeholder="Enter your email id" required>
+                        <button type="submit"><i class="fas fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fab fa-brands fa-facebook-f mx-1"></i>
+                        <i class="fab fa-brands fa-twitter mx-1"></i>
+                        <i class="fab fa-brands fa-instagram mx-1"></i>
+                        <i class="fab fa-brands fa-tiktok mx-1"></i>
+                        <i class="fab fa-brands fa-whatsapp mx-1"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Lunatix 2023 © - All Rights Reserved</p>
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

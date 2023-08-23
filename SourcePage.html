@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lunatix | Source Page</title>
+	<link rel="stylesheet" href="SourceStyle.css">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  	<style type="text/css">
+  		.custom-toggler.navbar-toggler {
+    	    border-color: orange;
+    	}
+
+    	.custom-toggler .navbar-toggler-icon {
+    	    background-image: url(
+    	    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 165, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    	}
+  		.card{
+			position: relative;
+			width: 280px;
+			height: 400px;
+			margin: 30px;
+			box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+			border-radius: 15px;
+			background: rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-top: 1px solid rgba(255, 255, 255, 0.5);
+			border-left: 1px solid rgba(255, 255, 255, 0.5);
+			backdrop-filter: blur(5px);
+			transition: 1s all ease-out;
+		}
+		.navbar .offcanvas .offcanvas-body .nav-item{
+        padding: 5px;
+        font-weight: 800;
+        font-size: larger;
+        letter-spacing: 2px;
+    }
+
+    .navbar .offcanvas .offcanvas-body  .nav-link{
+        width: 150px;
+        color: whitesmoke;
+        transition: 1s all ease-out;
+    }
+
+    .navbar .offcanvas .offcanvas-body  .nav-link:hover{
+        font-weight: bold;
+        color: orange;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: 8px solid orange;
+        border-right: 8px solid orange;
+    }
+
+    .navbar .offcanvas .offcanvas-body  .nav-link{
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+  	</style>
+</head>
+<body style="background-color: rgba(113,113,113,255)">
+	<nav class="navbar navbar-expand-lg navbar-color sticky-top">
+        <button class="navbar-toggler mx-auto border-0 custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#myoffcanvasnavbar">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-dark" id="myoffcanvasnavbar">
+            <div class="offcanvas-body">
+                <div class="navbar-brand ms-5 text-center">
+                    <a href="index.html"><img src="favicon.png" style="width: 70px; border-radius: 50%;"></a>
+                </div>
+                <ul class="navbar-nav mt-3 mx-auto">
+                    <li class="nav-item"><a href="AboutUs.html" class="nav-link text-center mx-auto">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center mx-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Scholars
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+						  <li><a class="dropdown-item" href="SourcePage.html">Scholars</a></li>
+                          <li><a class="dropdown-item" href="UndergraduateScholars.html">Undergraduate</a></li>
+                          <li><a class="dropdown-item" href="PostgraduateScholars.html">Postgraduate</a></li>
+                          <li><a class="dropdown-item" href="MasterDegreeScholars.html">MasterDegree</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="Sign Up.html" class="nav-link text-center mx-auto">Sign Up</a></li>
+                    <form class="mx-auto text-center">
+                        <div class="d-flex flex-sm-row ms-4" style="width: 300px; height: 50px; background-color: orange; border-top-left-radius: 100px; border-bottom-right-radius: 100px; border-bottom-right-radius: 100px;">
+                          <input type="text" class="form-control" placeholder="             Search..." style="border: 3px orange solid; border-bottom-right-radius: 100px; border-top-left-radius: 100px;">
+                          <button class="btn" style="background-color: orange;  border-bottom-right-radius: 100px;"><i class="fa-solid fa-magnifying-glass my-2 me-3 text-light" style="width: 30px;"></i></button>
+                        </div>                  
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--The Modal-->
+    <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!--Modal Header-->
+                <div class="modal-header border-0">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--Modal Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <a href="#" class="mbtn  mb-5"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google me-2" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                            </svg>
+                            Sign up with Google
+                        </a>
+                        <br>
+                        <br>
+                        <a href="#" class="mbtn mb-5"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google me-2" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                            </svg>
+                            Sign up with Facebook
+                        </a>
+                        <br>
+                        <br>
+                        <a href="#" class="mbtn mt-5"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter me-2" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                            Sign up with twitter
+                        </a>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="d-flex align-items-center g-0">
+                        <div class="border-bottom fw-900 mw-50 w-100"></div>
+                        <span class="mx-2 fw-bold" style="color: orange;">Or</span>
+                        <div class="border-bottom fw-900 mw-50 w-100"></div>
+                    </div>
+                    <form class="was-validated">
+                        <div class="my-3">
+                          <label class="form-label" for="validation1">Email</label>
+                          <input class="form-control bg-light" type="email" id="validation1" name="email" id="email" style="border: none;" placeholder="@example.com" required>
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="my-3">
+                            <div class="row">
+                                <label for="validation2" class="form-label mb-0">Password</label>
+                                <label class="form-label d-flex justify-content-end"><a href="#" style="text-decoration: none; color: red;">Forget password</a></label>   
+                            </div>
+                            <input class="form-control" id="validation2" placeholder="(Must be 8 letters)" required id="myPsw">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="validation3" required>
+                            <label class="form-check-label" for="validation3">I agree terms and conditions.</label>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Check this checkbox to continue.</div>
+                        </div>
+                    </form>
+                </div>      
+                <!--Modal Footer-->
+                <div class="modal-footer border-0">
+                    <a href="#" class="mbtn">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-body">
+    	<div class="container pt-5">
+			<div class="card">
+				<div class="content">
+					<h2>01</h2>
+					<h3>Undergraduate</h3>
+					<p>An undergraduate refers to a student pursuing a higher education degree, typically a bachelor's degree, at a university or college. It is the first level of formal education beyond high school.</p>
+					<a href="#1info" class="a1">Read More</a>
+					<a href="UndergraduateScholars.html" class="a2">Go --></a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<h2>02</h2>
+					<h3>Postgraduate</h3>
+					<p>Postgraduate entails advanced education after undergraduate studies, pursuing master's or doctoral degrees. Offers specialization and research opportunities for expertise.</p>
+					<a href="#1info" class="a1">Read More</a>
+					<a href="PostgraduateScholars.html" class="a2">Go --></a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<h2>03</h2>
+					<h3>Master Degree</h3>
+					<p>A Master's degree is a postgraduate qualification earned after completing a bachelor's program. It involves specialized study and research in a particular field.</p>
+					<a href="#1info" class="a1">Read More</a>
+					<a href="MasterDegreeScholars.html" class="a2">Go --></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="text-body2 mt-5">
+		<div class="text-center mt-4 main-body">
+			<a href="#1info"><h1 class="Darrow p-0 mx-auto"></h1></a>
+			<div class="mt-5">
+				<div class="col-12">
+					<h4><b>Welcome to <font style="font-family: courier new; letter-spacing: 2px; font-size: 40px;" class="Lunatix">Lunati<span class="x">x</span></font>, your gateway<br> to various scholarships and financial aid programs. Discover opportunities to fund your education and shape your future.</b></h4>
+				</div>
+				<br>
+				<div style="border-top: 3px solid black;" class="container"></div>
+				<br>
+				<br>
+				<br>
+				<div class="container info-box" id="1info">
+					<div class="col-sm-4">
+						<img src="Undergraduate Image.jpg" alt="Undergraduate Image" style="width: 100%;" class="sourceimg">
+					</div>
+					<div class="col-sm-6 inner-box">
+						<h3 class="pt-3"><b>Undergraduate Program</b></h3>
+						<p class="mt-3 ps-5 pe-5 pt-4" style="text-align: justify; text-indent: 50px;">An undergraduate program is an educational course of study pursued by students after completing their secondary education (high school or equivalent). It is the first level of higher education and typically leads to the award of a Bachelor's degree upon successful completion. These programs are offered by colleges, universities, and other higher education institutions.</p>
+						<a class="btn btn-dark more-button" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">For more information ...</a>
+					</div>
+					<div class="collapse multi-collapse" id="multiCollapseExample1">
+						<div class="col-10 mx-auto pe-5 pt-4 inner-box">
+							<p style="text-align: justify;">
+								Key features of an undergraduate program include:<br><br>
+								<ol class="text-start">
+									<li>Duration: Undergraduate programs usually span three to four years, though it can vary depending on the country and the specific course of study.</li>
+
+									<li>Bachelor's Degree: Successful completion of an undergraduate program results in the award of a Bachelor's degree. The degree may have different names based on the field of study, such as a Bachelor of Arts (B.A.), Bachelor of Science (B.S.), Bachelor of Engineering (B.E.), etc.</li>
+
+									<li>Field of Study: Undergraduate programs offer a wide range of disciplines and majors for students to choose from. Students can pursue degrees in fields such as arts, sciences, business, engineering, social sciences, humanities, and more.</li>
+
+									<li>Core Curriculum: Each undergraduate program has a core curriculum that includes a set of required courses and elective options. The core curriculum provides a foundational understanding of the chosen field of study.</li>
+
+									<li>Academic Advisors: Students often have access to academic advisors who guide them in choosing the right courses, monitor their progress, and offer support throughout their academic journey.</li>
+
+									<li>Opportunities for Specialization: Many undergraduate programs allow students to specialize in specific areas within their chosen field. This specialization provides in-depth knowledge and expertise in a particular subject.</li>
+
+									<li>Co-curricular Activities: In addition to academic studies, undergraduate programs may offer co-curricular activities, such as clubs, societies, sports, and cultural events, to enhance the overall learning experience and personal development of students.</li>
+
+									<li>Practical Experience: Some programs include opportunities for internships, research projects, or practical training, enabling students to apply their knowledge in real-world situations and gain valuable experience.</li>
+
+									<li>Admission Requirements: Each undergraduate program has specific admission requirements, which may include academic qualifications, standardized test scores, recommendation letters, and personal statements.</li><br><br>
+
+									Overall, an undergraduate program serves as a stepping stone for students to explore their academic interests, develop critical thinking and problem-solving skills, and prepare for further education or entry into the workforce. It forms the basis for advanced studies at the graduate level or can lead directly to career opportunities based on the chosen field of study.
+								</ol>
+							</p>
+							<button type="button" class="btn-close" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"></button>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="container info-box mt-5" id="2info">
+					<div class="col-sm-6 inner-box">
+						<h3 class="pt-3"><b>Postgraduate Program</b></h3>
+						<p class="mt-3 ps-5 pe-5 pt-4" style="text-align: justify; text-indent: 50px;">A postgraduate program, also known as a graduate program or higher education program, is an advanced level of academic study pursued by students who have already completed their undergraduate education. Postgraduate programs are designed to provide specialized knowledge and expertise in specific fields and often lead to the award of advanced degrees, such as Master's degrees or Doctoral degrees (Ph.D.).</p>
+						<a class="btn btn-dark more-button" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">For more information ...</a>
+					</div>
+					<div class="col-sm-4">
+						<img src="Postgraduate Image.jpg" alt="Postgraduate Image" style="width: 100%;" class="sourceimg">
+					</div>
+					<div class="collapse multi-collapse" id="multiCollapseExample2">
+						<div class="col-10 mx-auto pe-5 pt-4 inner-box">
+							<p style="text-align: justify;">
+								Key features of postgraduate program include:<br><br>
+								<ol class="text-start">
+									<li>Prerequisite: Undergraduate Degree: To be eligible for a postgraduate program, students must have completed a Bachelor's degree or its equivalent in the relevant field of study. Some postgraduate programs may also consider candidates with extensive professional experience.</li>
+
+    								<li>Master's Degrees: Postgraduate programs offer Master's degrees in various disciplines. These degrees typically include Master of Arts (M.A.), Master of Science (M.S.), Master of Business Administration (MBA), Master of Engineering (M.Eng.), and many more.</li>
+
+    								<li>Doctoral Degrees: Doctoral programs are the highest level of academic achievement. They offer Doctoral degrees, such as Doctor of Philosophy (Ph.D.), Doctor of Education (Ed.D.), Doctor of Medicine (M.D.), etc. Doctoral programs emphasize original research and the development of new knowledge in a specific area of study.</li>
+
+    								<li>Specialization and Research: Postgraduate programs provide opportunities for specialization in specific areas within a discipline. Research is a significant component of many postgraduate programs, particularly at the doctoral level, where students conduct original research under the guidance of faculty advisors.</li>
+
+    								<li>Advanced Coursework: Postgraduate programs include advanced coursework that delves deeper into the subject matter, building upon the foundational knowledge gained during undergraduate studies.</li>
+
+    								<li>Thesis/Dissertation: In many postgraduate programs, students are required to complete a thesis (for Master's programs) or a dissertation (for Doctoral programs). This is a comprehensive research project that demonstrates the student's ability to conduct independent research and contribute to the body of knowledge in their field.</li>
+
+    								<li>Flexible Study Options: Postgraduate programs may offer part-time or full-time study options to accommodate the needs of working professionals or individuals with other commitments.</li>
+
+    								<li>Career Advancement: Postgraduate degrees often open up new career opportunities and may lead to higher-paying positions or roles with greater responsibility and influence.</li>
+
+    								<li>Interdisciplinary Programs: Some postgraduate programs are interdisciplinary, allowing students to combine knowledge from multiple fields and address complex real-world challenges.</li>
+
+    								<li>Admission Requirements: Each postgraduate program has specific admission criteria, which may include academic performance, standardized test scores (e.g., GRE, GMAT), letters of recommendation, a statement of purpose, and relevant work or research experience.</li><br><br>
+
+									Postgraduate education is crucial for individuals seeking to advance their expertise, contribute to research and innovation, and pursue leadership positions in academia, industry, government, and various other sectors. It plays a vital role in advancing knowledge and pushing the boundaries of human understanding across a wide range of disciplines.
+								</ol>
+							</p>
+							<button type="button" class="btn-close" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2"></button>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="container info-box mt-5" id="3info">
+					<div class="col-sm-4">
+						<img src="MasterDegree Image.jpg" alt="Postgraduate Image" style="width: 100%;" class="sourceimg">
+					</div>
+					<div class="col-sm-6 inner-box">
+						<h3 class="pt-3"><b>Master degree</b></h3>
+						<p class="mt-3 ps-5 pe-5 pt-4" style="text-align: justify; text-indent: 50px;">A Master's degree is an advanced academic degree that individuals pursue after completing their undergraduate education. It represents a higher level of specialization and expertise in a particular field of study. Master's degree programs are offered by universities and colleges and typically require one to two years of full-time study, depending on the program and country.</p>
+						<a class="btn btn-dark more-button" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">For  more information ...</a>
+					</div>
+					<div class="collapse multi-collapse" id="multiCollapseExample3">
+						<div class="col-10 mx-auto pe-5 pt-4 inner-box">
+							<p style="text-align: justify;">
+								Key features of postgraduate program include:<br><br>
+								<ol class="text-start">
+								    <li>Prerequisite: Bachelor's Degree: To be eligible for a Master's degree program, students must have completed a Bachelor's degree or its equivalent. Some Master's programs may have specific undergraduate prerequisites related to the chosen field of study.</li>
+
+    								<li>Master's Degrees Offered: Master's degree programs offer a variety of degrees, such as Master of Arts (M.A.), Master of Science (M.S.), Master of Business Administration (MBA), Master of Engineering (M.Eng.), Master of Education (M.Ed.), and more. Each degree type emphasizes specialized knowledge in a specific area.</li>
+
+    								<li>Specialization: Master's degree programs provide opportunities for students to specialize in a particular subject or area within their field of study. This specialization allows students to gain in-depth knowledge and expertise in a focused area of interest.</li>
+
+    								<li>Coursework and Research: Master's degree programs usually combine coursework with research components. Students complete a set of required courses that build on their undergraduate education and may have the option to select electives based on their interests. Some Master's programs may also require students to undertake a research project or thesis.</li>
+
+    								<li>Thesis or Non-Thesis Options: Depending on the program, students may have the option to complete a thesis, which is a substantial research project, or a non-thesis track that focuses more on coursework and practical experience.</li>
+
+    								<li>Career Advancement: A Master's degree is often pursued by individuals seeking career advancement or specialization in their chosen field. It can open up new opportunities for higher-level positions, increased responsibilities, and higher earning potential.</li>
+
+    								<li>Preparation for Doctoral Studies: For those considering further academic pursuits, such as a Ph.D., a Master's degree can serve as a stepping stone. Many doctoral programs prefer applicants with a Master's degree as it demonstrates their ability to engage in advanced research.</li>
+
+   									<li>Professional Networking: Master's degree programs offer students the chance to build professional networks by interacting with faculty, peers, and industry professionals. This networking can be valuable for career development and future opportunities.</li>
+
+    								<li>Flexible Study Options: Some Master's degree programs offer part-time or online study options to accommodate the needs of working professionals or individuals with other commitments.</li><br><br>
+
+    								Master's degrees are prevalent across various fields, including arts and humanities, sciences, engineering, business, education, healthcare, social sciences, and more. Pursuing a Master's degree is a significant investment in one's education and can lead to enhanced career prospects, personal growth, and intellectual fulfillment.
+    							</ol>
+							</p>
+							<button type="button" class="btn-close" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3"></button>
+						</div>
+					</div>
+				</div>
+				<br><br><br><br><br>
+				<div class="info-box">
+					<div class="row">
+						<div class="col-1"></div>
+						<div class="top10uni col-lg-1 my-auto">
+							<img src="Harvard.png" style="width: 100%;">
+						</div>
+						<div class="top10uni col-lg-1 my-auto">
+							<img src="Stanford.png" style="width: 100%;">
+						</div>
+						<div class="top10uni col-lg-1 my-auto">
+							<img src="Oxford.png" style="width: 100%;">
+						</div>
+						<div class="top10uni col-lg-1 my-auto">
+							<img src="Cambridge.png" style="width: 100%;">
+						</div>
+						<div class="top10uni col-lg-1 my-auto">
+							<img src="Columbia.png" style="width: 100%;">
+						</div>
+						<div class="top10uni col-lg-1 my-auto">
+							<img src="Princeton.png" style="width: 100%;">
+						</div>
+						<div class="top10uni col-lg-1 my-auto">
+							<img src="John hopkins.jpg" style="width: 100%;">
+						</div>
+						<div class="top10uni col-lg-1 my-auto">
+							<img src="University of California.jpg" style="width: 100%;">
+						</div>
+						<div class="top10uni col-lg-1 my-auto">
+							<img src="University of Washington.jpg" style="width: 100%;">
+						</div>
+						<div class="top10uni col-lg-1 my-auto">
+							<img src="University of Tokyo.jpg" style="width: 100%;">
+						</div>
+						<div class="col-1"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="circle">
+        <footer class="fw-bold">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <img src="favicon.png" class="logo">
+                    <p>Unlock countless scholarships with a Lunatix subscription! Access curated opportunities, expert advice, and timely alerts. Subscribe now for an education-filled future!</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Office <div class="underline"><span></span></div></h5>
+                    <p>Yuzana Street</p>
+                    <p>41 Ward, North Dagon</p>
+                    <p>No.159, Yangon</p>
+                    <p class="email-id">zwekhanthtal2009@gmail.com</p>
+                    <h6>+95 - 9965929856</h6>   
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Links <div class="underline"><span></span></div></h5>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AboutUs.html">About</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle text-center mx-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Scholars
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+							  <li><a class="dropdown-item" href="SourcePage.html">Scholars</a></li>
+                              <li><a class="dropdown-item" href="UndergraduateScholars.html">Undergraduate</a></li>
+                              <li><a class="dropdown-item" href="PostgraduateScholars.html">Postgraduate</a></li>
+                              <li><a class="dropdown-item" href="MasterDegreeScholars.html">MasterDegree</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://edusn-my.sharepoint.com/:w:/g/personal/zwekhanthtal_edusn_onmicrosoft_com/EeyFD7thtf9Iq--2t3E37p0BLVcSoATgrDB3ARU0pGy_ZQ?e=VoQOiY">References</a></li>
+                        <li><a href="" data-bs-toggle="modal" data-bs-target="#mymodal">Log In</a></li>
+                        <li><a href="Sign Up.html">Sign Up</a></li>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5>Newsletter <div class="underline"><span></span></div></h5>
+                    <form action="">
+                        <i class="far fa-regular fa-envelope"></i>
+                        <input type="email" class="ms-2" placeholder="Enter your email id" required>
+                        <button type="submit"><i class="fas fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/thomus.thomus.5076?mibextid=2JQ9oc"><i class="fab fa-brands fa-facebook-f mx-1"></i></a>
+						<a href="#"><i class="fab fa-brands fa-twitter mx-1"></i></a>
+						<a href="https://instagram.com/lunatix290?igshid=MjEwN2IyYWYwYw=="><i class="fab fa-brands fa-instagram mx-1"></i></a>
+						<a href="https://www.tiktok.com/@lunatix24?lang=en"><i class="fab fa-brands fa-tiktok mx-1"></i></a>
+                    </div>
+                </div>
+                <a href="#" style="text-decoration: none;" class="text-light">Back to Top<i class="fa-solid fa-arrow-up ms-2"></i></a>
+            </div>
+            <hr>
+            <p class="copyright">Lunatix 2023 © - All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
